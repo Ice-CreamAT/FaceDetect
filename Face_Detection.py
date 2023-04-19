@@ -19,8 +19,8 @@ detections = classifier.detectMultiScale(grey_image, scaleFactor=1.1,
 print(detections)             # Show the positions of each face in the image
 print(len(detections))        # Show the number of detected faces
 
-# Each face has an "x" and "y" coordinate.
-# "w" and "h" are for width and height
+ # Each face has an "x" and "y" coordinate.
+ # "w" and "h" are for width and height
 for (x, y, w, h) in detections:
      # Parameters for drawing the detection rectangle
     cv2.rectangle(image, (x, y), (x + w, y + h), (0,255,0), 2)
