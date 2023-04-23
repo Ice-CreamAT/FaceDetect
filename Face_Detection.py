@@ -1,6 +1,6 @@
 import cv2
 
-image = cv2.imread('Jobs.png')                                             # Select the image file that the code will read. 
+image = cv2.imread('Jobs.png')                                             # Select the image file that the code will read.
 
 classifier = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')  # Select the haarscascade parameter.
 grey_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)                       # Convect the image to grey scale.
