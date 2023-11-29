@@ -29,9 +29,9 @@ print(len(detections))   # Show the number of detected faces.
 #-------------------------------------------
 
 for (x, y, w, h) in detections:
-     # Parameters for drawing the detection rectangle.
-  
-    cv2.rectangle(image, (x, y), (x + w, y + h), (0,255,0), 2)
+  cv2.rectangle(image, (x, y), (x + w, y + h), (0,255,0), 2)
+   # Parameters for drawing the detection rectangle.
+
 
 cv2.imshow('Face Detection', image)      # Show image with title.
 cv2.waitKey(0)                           # Will close the window when you press any key.
