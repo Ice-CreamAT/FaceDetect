@@ -13,7 +13,8 @@ detections = classifier.detectMultiScale(grey_image, scaleFactor=1.1,
 
 #------------------------------------------------------------------------
 # ScaleFactor: resize a larger object to a smaller one. Slower if the value is smaller.
-# minNeighbors: How many neighbors must each candidate rectangle have to keep it. Higher values = higher quality.
+# minNeighbors: How many neighbors must each candidate rectangle have to keep it.
+#Higher values = higher quality.
 # minSize: Specifies the smallest object to be recognized.
 # maxSize: (I think it's already obvious.)
 #------------------------------------------------------------------------
